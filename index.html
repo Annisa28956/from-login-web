@@ -2,56 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<meta name="robots" content="follow,index">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🔐 An Open Source Template for Login Page From Scratch Without Any CSS Framework">
-	<meta name="keywords" content="login page css, login template, login css, login form template">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="follow,index">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🔐 An Open Source Template for Login Page From Scratch Without Any CSS Framework">
+    <meta name="keywords" content="login page css, login template, login css, login form template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../shared/normalize.css">
-	<link rel="stylesheet" href="../shared/additional.css">
+    <link rel="stylesheet" href="../shared/additional.css">
     <link rel="apple-touch-icon" sizes="180x180" href="https://mazipan.github.io/login-page-css/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="https://mazipan.github.io/login-page-css/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="https://mazipan.github.io/login-page-css/favicon/favicon-16x16.png">
-	<link rel="manifest" href="https://mazipan.github.io/login-page-css/manifest.json" />
-    <title>Anisa Login </title>
-
+    <link rel="icon" type="image/png" sizes="32x32" href="https://mazipan.github.io/login-page-css/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://mazipan.github.io/login-page-css/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://mazipan.github.io/login-page-css/manifest.json" />
+    <title>Anisa Login</title>
+    <style>
+        body {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of the viewport */
+            margin: 0;
+        }
+        .login-div {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login {
+            text-align: center; /* Center text within the form */
+        }
+        .input-text {
+            margin: 15px 0; /* Space between inputs */
+        }
+        .warning-input {
+            color: red; /* Style for warning messages */
+            display: none; /* Hidden by default */
+        }
+        button {
+            background-color: pink;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: lightpink; /* Change color on hover */
+        }
+    </style>
 </head>
 <body>
-    
-        <div class="login-div">
-            <form class="login">
-                <h1>Sign In </h1>
-                <div class="input-text">
-                    <input type="text" id="inputEmail" name="email" placeholder="Email or phone number" />
-                    <div class="warning-input" id="warningEmail">
-                        Please enter a valid email or phone number.
-                    </div>
-                </div>
+    <div class="login-div">
+        <form class="login" action="#" method="POST">
+            <h1>Sign In</h1>
+            <div class="input-text">
+    <input type="text" id="inputEmail" name="email" placeholder="Email or phone number" />
+    <div class="warning-input" id="warningEmail">
+        Please enter a valid email or phone number.
+    </div>
+</div>
 
-                <div class="input-text">
-                    <input type="password" id="inputPassword" name="password" placeholder="Password" />
-                    <div class="warning-input" id="warningPassword">
-                        Your password must contain between 4 and 60 characters.
-                    </div>
-                </div>
+<div class="input-text">
+    <input type="password" id="inputPassword" name="password" placeholder="Password" />
+    <div class="warning-input" id="warningPassword">
+        Your password must contain between 4 and 60 characters.
+    </div>
+</div>
 
-               
-            </form>
-        </div>
-
-        <!-- ADDITIONAL CODE -- DISCLAIMER SECTION --start -->
-       
-        <!-- ADDITIONAL CODE -- DISCLAIMER SECTION --end -->
+            <button type="submit">Log In</button>
+        </form>
     </div>
 
-
-
-   
-
-    <!-- ADDITIONAL CODE -- start YOU MIGHT NOT NEEDED -->
-	<!-- ADDITIONAL CODE -- end YOU MIGHT NOT NEEDED -->
+    <!-- ADDITIONAL CODE -- DISCLAIMER SECTION --start -->
+    <!-- ADDITIONAL CODE -- DISCLAIMER SECTION --end -->
 </body>
 </html>
